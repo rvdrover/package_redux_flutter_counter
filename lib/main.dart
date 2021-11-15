@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final store = Store<int>(counterReducers, initialState: 0);
+    final store = Store<int>(counterReducers, initialState:0);
     return MaterialApp(
       title: 'Flutter State',
       theme: ThemeData(

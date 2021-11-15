@@ -32,7 +32,7 @@ class MyHomePage extends StatelessWidget {
         children: [
           FloatingActionButton(
             onPressed: () =>
-                StoreProvider.of(context).dispatch(IncrementAction),
+                StoreProvider.of<int>(context).dispatch(IncrementAction()),
             tooltip: 'Increment',
             child: const Icon(Icons.add),
           ),
@@ -41,7 +41,7 @@ class MyHomePage extends StatelessWidget {
           ),
           FloatingActionButton(
             onPressed: () =>
-                StoreProvider.of(context).dispatch(DecrementAction),
+                StoreProvider.of<int>(context).dispatch(DecrementAction()),
             tooltip: 'Decrement',
             child: const Icon(Icons.remove),
           )
